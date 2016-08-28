@@ -4,6 +4,11 @@
 <title>ThreatPod</title>
 <style>body{margin:0 auto;font-family:Tahoma,Verdana,Arial,sans-serif;text-align:center;}</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#video").play();
+	})
+</script>
 <!--<script type="text/javascript">
 
     var keyword = "datacenter";
@@ -41,12 +46,15 @@ ThreatPod
 </h1>
 </marquee>
 <p>
-<video poster="//i.imgur.com/RynHmZjh.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline>
-	<source src="//i.imgur.com/RynHmZj.mp4" type="video/mp4">
+<video id="video" poster="//i.imgur.com/RynHmZjh.jpg" preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline>
+	<source src="//i.imgur.com/RynHmZj.mp4"/>
+	<source src="//i.imgur.com/RynHmZj.mp4" type="video/mp4"/>
 </video>
 <!--<img id="img" src="threatpod.jpg"/>-->
 </p>
+<!--
 <iframe width="1" height="1" src="https://www.youtube.com/embed/8ZcmTl_1ER8?autoplay=1" frameborder="0" allowfullscreen></iframe>
+-->
 <div class="realtimeuserscounter realtimeuserscounter--styled"></div>
 <script src="https://realtimeusers.bycontrast.co/realtimeusers.js"></script>
 </body>
